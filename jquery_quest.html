@@ -8,25 +8,27 @@
       }
     </style>
     <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/tests.js"></script>
   </head>
   <body>
-      <div id="target-1" class="quest_target">1</div>
-      <div id="target-2" class="quest_target">2</div>
+      <div id="color-target" class="quest_target">1</div>
+      <div id="move-target" class="quest_target">2</div>
       <div id="target-3" class="quest_target">3</div>
       <div id="target-4" class="quest_target">4</div>
       <div id="target-5" class="quest_target">5</div>
       <div id="target-6" class="quest_target">6</div>
       <div id="target-7" class="quest_target">7</div>
       <div id="target-8" class="quest_target">8</div>
+      <script type="text/javascript" charset="utf-8">jQuest.testSuite.init()</script>
 
       <h2>Complete the following tasks for the target numbers:</h2>
       <ol>
-        <li id="ex-1">Color the 1!</li>
+        <li id="color-ex">Color the 1!</li>
         <script type="text/javascript" charset="utf-8">
           // Your code goes here!
         </script>
 
-        <li id="ex-2">Move the 2!</li>
+        <li id="move-ex">Move the 2 down and to the right!</li>
         <script type="text/javascript" charset="utf-8">
           // Your code goes here!
         </script>
@@ -62,6 +64,8 @@
         </script>
       </ol>
 
-      <script type="text/javascript" charset="utf-8" src="lib/tests.js"></script>
+      <script type="text/javascript" charset="utf-8">
+        jQuest.testSuite.run();
+      </script>
   </body>
 </html>
