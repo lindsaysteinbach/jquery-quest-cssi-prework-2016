@@ -1,23 +1,14 @@
 <html>
   <head>
-    <style type="text/css" media="all">
-      .cf:before,
-      .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
-      .cf:after { clear: both; }
-
-      .quest_target {
-        font-size: 6em;
-        float: left;
-        width: 25%;
-      }
-    </style>
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery-ui.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/tests.js"></script>
   </head>
   <body>
       <h1>jQuery</h1>
+      <hr />
 
       <p>The instructions will turn green when the interactions are correctly implemented!</p>
       <p>Refresh the page to run your code and the tests.</p>
@@ -39,6 +30,23 @@
           <p>If the fourth number is even, make it this <span style="color: blue;">blue</span>.</p>
           <p>Else, if the fourth number is odd, make it this <span style="color: purple;">purple</span>.</p>
         </li>
+      </ol>
+
+      <h1>jQuery and Events</h1>
+      <hr />
+
+      <div class="cf">
+        <div id="click-target" class="evented_quest_target">A</div>
+        <div id="something-target" class="evented_quest_target">B</div>
+      </div>
+
+      <ol>
+        <li id="click-ex">
+          <p>Toggle the class "coolness" on the "A" div when it's clicked.</p>
+          <p>So, if it's clicked and it doesn't have the "coolness" class, add it.</p>
+          <p>If it's clicked and it does have the "coolness" class, remove it.</p>
+          <p>There is an easy way and a hard way to do this...</p>
+       </li>
       </ol>
 
       <script type="text/javascript" charset="utf-8">jQuest.testSuite.run();</script>
