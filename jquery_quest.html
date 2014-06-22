@@ -1,48 +1,61 @@
 <html>
   <head>
     <style type="text/css" media="all">
+      .cf:before,
+      .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+      .cf:after { clear: both; }
+
       .quest_target {
         font-size: 6em;
         float: left;
         width: 25%;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css">
     <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/jquery-ui.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/tests.js"></script>
   </head>
   <body>
-      <p>
-        Complete the following exercises. The instructions will turn green
-        when the interactions are correctly implemented!
-      </p>
+      <h1>jQuery</h1>
 
-      <p>
-        Refresh the page to run your code and the tests.
-      </p>
-      <div id="color-target" class="quest_target">1</div>
-      <div id="move-target" class="quest_target">2</div>
-      <div id="prepend-target" class="quest_target">3</div>
-      <div id="condition-target" class="quest_target"></div>
-      <script type="text/javascript" charset="utf-8">
-        jQuest.testSuite.init()
-      </script>
+      <p>The instructions will turn green when the interactions are correctly implemented!</p>
+      <p>Refresh the page to run your code and the tests.</p>
 
-      <h3>jQuery</h3>
+      <div class="cf">
+        <div id="color-target" class="quest_target">1</div>
+        <div id="move-target" class="quest_target">2</div>
+        <div id="prepend-target" class="quest_target">3</div>
+        <div id="condition-target" class="quest_target"></div>
+      </div>
+
+      <script type="text/javascript" charset="utf-8">jQuest.testSuite.init()</script>
+
       <ol>
-        <li id="color-ex">
-          <p>Change the color of the 1!</p>
-        </li>
+        <li id="color-ex"><p>Change the color of the 1!</p></li>
         <li id="move-ex"><p>Move the 2 down and to the right!</p></li>
-        <li id="prepend-ex">
-          <p>Prepend a "<" to the 3!</p>
-        </li>
+        <li id="prepend-ex"><p>Prepend a "<" to the 3!</p></li>
         <li id="condition-ex">
           <p>If the fourth number is even, make it this <span style="color: blue;">blue</span>.</p>
           <p>Else, if the fourth number is odd, make it this <span style="color: purple;">purple</span>.</p>
         </li>
       </ol>
-      <h3>jQuery and jQueryUI</h3>
+      <h1>jQuery and jQueryUI (these exercises don't have tests)</h1>
+
+      <p><a href="http://jqueryui.com/accordion/">Animate this accordion!</a></p>
+      <hr />
+
+      <div id="accordion">
+        <h3>Section Foo</h3>
+        <div><p>Foo!</p></div>
+        <h3>Section Bar</h3>
+        <div><p>Bar!</p></div>
+        <h3>Section Baz</h3>
+        <div><p>Baz!</p></div>
+        <h3>Section Qux</h3>
+        <div><p>Qux!</p></div>
+      </div>
+
       <script type="text/javascript" charset="utf-8" src="jquery_quest.js"></script>
 
       <script type="text/javascript" charset="utf-8">
