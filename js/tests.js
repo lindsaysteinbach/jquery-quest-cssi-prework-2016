@@ -16,10 +16,8 @@ jQuest.testSuite = (function() {
 
       if ($t1.css('color') !== black_rgb) {
         $e1.css('color', 'green');
-        return 0;
       } else {
         $e1.css('color', 'red');
-        return 1;
       }
     },
     moveTest: function() {
@@ -30,10 +28,8 @@ jQuest.testSuite = (function() {
 
       if (top > t2OriginalTop || left > t2OriginalLeft) {
         $e.css('color', 'green');
-        return 0;
       } else {
         $e.css('color', 'red');
-        return 1;
       }
     },
     prependTest: function() {
@@ -62,10 +58,10 @@ jQuest.testSuite = (function() {
     },
     run: function() {
       console.log('Test suite running...');
-      this.colorTest() +
-      this.moveTest() +
-      this.prependTest() +
-      this.conditionTest() +
+      this.colorTest();
+      this.moveTest();
+      this.prependTest();
+      this.conditionTest();
       console.log('Test suite complete!');
     }
   }

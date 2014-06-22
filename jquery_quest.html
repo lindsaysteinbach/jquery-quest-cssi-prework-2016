@@ -11,10 +11,10 @@
         width: 25%;
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="lib/jquery-ui.css">
-    <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="lib/jquery-ui.js"></script>
-    <script type="text/javascript" charset="utf-8" src="lib/tests.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/tests.js"></script>
   </head>
   <body>
       <h1>jQuery</h1>
@@ -40,9 +40,12 @@
           <p>Else, if the fourth number is odd, make it this <span style="color: purple;">purple</span>.</p>
         </li>
       </ol>
+
+      <script type="text/javascript" charset="utf-8">jQuest.testSuite.run();</script>
+
       <h1>jQuery and jQueryUI (these exercises don't have tests)</h1>
 
-      <p><a href="http://jqueryui.com/accordion/">Animate this accordion!</a></p>
+      <p><a href="http://jqueryui.com/accordion/" target="_blank">Animate this accordion!</a></p>
       <hr />
 
       <div id="accordion">
@@ -56,10 +59,10 @@
         <div><p>Qux!</p></div>
       </div>
 
-      <script type="text/javascript" charset="utf-8" src="jquery_quest.js"></script>
+      <p><a href="http://jqueryui.com/draggable/" target="_blank">Make this image draggable!</a></p>
+      <hr />
+      <img id="flying-kid" src="img/flying-kid.jpeg" />
 
-      <script type="text/javascript" charset="utf-8">
-        jQuest.testSuite.run();
-      </script>
+      <script type="text/javascript" charset="utf-8" src="jquery_quest.js"></script>
   </body>
 </html>
