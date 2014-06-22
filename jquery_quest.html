@@ -15,11 +15,7 @@
       <div id="color-target" class="quest_target">1</div>
       <div id="move-target" class="quest_target">2</div>
       <div id="prepend-target" class="quest_target">3</div>
-      <div id="target-4" class="quest_target">4</div>
-      <div id="target-5" class="quest_target">5</div>
-      <div id="target-6" class="quest_target">6</div>
-      <div id="target-7" class="quest_target">7</div>
-      <div id="target-8" class="quest_target">8</div>
+      <div id="condition-target" class="quest_target"></div>
       <script type="text/javascript" charset="utf-8">
         jQuest.testSuite.init()
       </script>
@@ -27,12 +23,17 @@
       <h2>Complete the following tasks for the target numbers:</h2>
       <h3>jQuery</h3>
       <ol>
-        <li id="color-ex">Color the 1!</li>
-        <li id="move-ex">Move the 2 down and to the right!</li>
-        <li id="prepend-ex">Prepend a "<" to the 3!</li>
-        <li id="ex-4"></li>
-        <li></li>
-        <li></li>
+        <li id="color-ex">
+          <p>Color the 1!</p>
+        </li>
+        <li id="move-ex"><p>Move the 2 down and to the right!</p></li>
+        <li id="prepend-ex">
+          <p>Prepend a "<" to the 3!</p>
+        </li>
+        <li id="condition-ex">
+          <p>If the fourth number is even, make it this <span style="color: blue;">blue</span>.</p>
+          <p>Else, if the fourth number is odd, make it this <span style="color: purple;">purple</span>.</p>
+        </li>
       </ol>
       <h3>jQuery and jQueryUI</h3>
       <script type="text/javascript" charset="utf-8" src="jquery_quest.js"></script>
