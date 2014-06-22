@@ -1,2 +1,2 @@
 // Your answers go here!
-// Try to keep them organized!
+// Try to keep them organized as you're going!
