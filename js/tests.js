@@ -26,7 +26,7 @@ jQuest.testSuite = (function() {
           top  = $t.position().top;
           left = $t.position().left;
 
-      if (top > t2OriginalTop || left > t2OriginalLeft) {
+      if (top > t2OriginalTop && left > t2OriginalLeft) {
         $e.css('color', 'green');
       } else {
         $e.css('color', 'red');
