@@ -2,6 +2,8 @@
 // jQuery
 //##############################################################################
 
+// Your code goes here!
+
 //##############################################################################
 // jQuery and Events
 //##############################################################################
@@ -9,21 +11,17 @@
 $('#click-target').on('click', function(e) {
   // This is the DOM element that was clicked
   var $target = $(e.target);
+
+  // Your code goes here!
 });
 
-$('.letter-b').on('hover',
-  function(e) {
-    var $target = $(e.target);
-    $target.css('font-size', '36px');
-    console.log('hover in');
-  },
-  function(e) {
-    var $target = $(e.target);
-    $target.css('font-size', '34px');
-    console.log('hover out');
-  }
+$('.letter-b').hover(
+  function(e) { 'your code goes here!' },
+  function(e) { 'your code goes here!' }
 );
 
 //##############################################################################
 // jQueryUI
 //##############################################################################
+
+// Your code goes here!
