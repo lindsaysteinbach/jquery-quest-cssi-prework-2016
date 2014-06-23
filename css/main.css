@@ -2,22 +2,23 @@
 .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
 .cf:after { clear: both; }
 
-.quest_target {
+.quest-target {
   font-size: 6em;
   float: left;
   width: 25%;
 }
 
-.quest_target {
-  font-size: 6em;
-  float: left;
-  width: 25%;
-}
-
-.evented_quest_target {
+.evented-quest-target {
+  text-align: center;
   font-size: 6em;
   float: left;
   width: 50%;
+}
+
+.letter-b {
+  font-size: 24px;
+  float: left;
+  width: 25%;
 }
 
 .coolness {

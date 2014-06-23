@@ -14,10 +14,10 @@
       <p>Refresh the page to run your code and the tests.</p>
 
       <div class="cf">
-        <div id="color-target" class="quest_target">1</div>
-        <div id="move-target" class="quest_target">2</div>
-        <div id="prepend-target" class="quest_target">3</div>
-        <div id="condition-target" class="quest_target"></div>
+        <div id="color-target" class="quest-target">1</div>
+        <div id="move-target" class="quest-target">2</div>
+        <div id="prepend-target" class="quest-target">3</div>
+        <div id="condition-target" class="quest-target"></div>
       </div>
 
       <script type="text/javascript" charset="utf-8">jQuest.testSuite.init()</script>
@@ -36,8 +36,13 @@
       <hr />
 
       <div class="cf">
-        <div id="click-target" class="evented_quest_target">A</div>
-        <div id="something-target" class="evented_quest_target">B</div>
+        <div id="click-target" class="evented-quest-target">A</div>
+        <div class="evented-quest-target">
+          <div class="letter-b">B</div>
+          <div class="letter-b">B</div>
+          <div class="letter-b">B</div>
+          <div class="letter-b">B</div>
+        </div>
       </div>
 
       <ol>
@@ -48,7 +53,10 @@
           <p>There is an easy way and a hard way to do this...</p>
        </li>
 
-        <li id="click-ex">
+        <li id="hover-ex">
+          <p>A "hover" event occurs when a mouse pointer is over a DOM element.</p>
+          <p>When a "B" is hovered over, make it larger.</p>
+          <p>When the hover leaves, change it back.</p>
         </li>
       </ol>
 
