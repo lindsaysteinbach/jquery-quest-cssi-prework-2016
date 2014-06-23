@@ -46,7 +46,7 @@ jQuest.testSuite = (function() {
       var $t        = $('#condition-target'),
           $e        = $('#condition-ex'),
           blue_rgb  = 'rgb(0, 0, 255)',
-          purple_rgb = 'rgb(255, 0, 255)';
+          purple_rgb = 'rgb(128, 0, 128)';
 
       if (parseInt($t.text()) % 2 === 0 && $t.css('color') == blue_rgb) {
         $e.css('color', 'green');
