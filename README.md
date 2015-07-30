@@ -1,7 +1,4 @@
----
-  tags: jquery, events, jquery ui
-  languages: javascript
----
+
 
 # jQuery Quest
 
