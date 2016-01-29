@@ -10,4 +10,4 @@ all of your code in "jquery_quest.js".
 jQuery and jQueryUI are already available, no need to download and load
 them!
 
-<a href='https://learn.co/lessons/jquery-quest' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/jquery-quest' title='jQuery Quest'>jQuery Quest</a> on Learn.co and start learning to code for free.</p>
